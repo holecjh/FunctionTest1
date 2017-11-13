@@ -20,7 +20,6 @@ public class ColumnAdd {
             stmt.close();
             stmt = null;
 
-
             PreparedStatement pstmt1 = conn.prepareStatement("vacuum");
             pstmt1.setQueryTimeout(30);
             pstmt1.executeUpdate();
